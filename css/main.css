@@ -2,3 +2,20 @@
   margin-top: 20px;
   display:flex;
 }
+
+.show >.form-button{
+  top: 36px;
+  left: 96px;
+}
+
+.inline-block{
+  display:inline-block;
+}
+
+.oculto{
+  margin-top: 20px;
+}
+
+.botones{
+  margin-top:30px;
+}
