@@ -66,6 +66,13 @@
 
 /*  General Style   ||-----------*/
 
+@font-face {
+font-family: 'Moon Flower Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Moon Flower Bold'), url('../fonts/Moon Flower Bold.woff') format('woff');
+}
+
 body, html {
     height: 100%;
     margin: 0;
@@ -76,7 +83,7 @@ body {
     line-height: 24px;
     color: #323232;
     font-size: 13px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Moon Flower Bold', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
 }
@@ -271,7 +278,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
     color: #323232;
     text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Moon Flower Bold', sans-serif;
     font-weight: 600;
     margin-top: 0px;
     margin-bottom: 10px;
