@@ -2,3 +2,24 @@
   margin-top: 20px;
   display:flex;
 }
+.subtitle_blog{
+	font-size: 120px;
+	color: white;
+}
+.item-caption h5{
+	font-size: 30px;
+}
+.item-mask p{
+	font-size: 17px !important;
+}
+.post-header h2{
+	font-size: 50px;
+	color: gray;
+	font-weight: bold;
+}
+.blog-post .post-meta, .comment-list .post-meta, .sidebar-widget .post-meta{
+	font-size: 15px !important;
+}
+.inner-intro{
+	padding:100px 0;
+}
