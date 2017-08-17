@@ -1,53 +1,51 @@
-$(document).ready(function(){
+$(function() {
 
-	$("#form_separte").validate({
+	var form = $('#form_separte');
 
-		rules:
-		{
-			nombres:{
-				required:true
-			},
-			email:{
-				required:true,
-				email:true
-			}
-		},
-		
-		messages:
-		{
-			nombres: "Ingresa tus nombres completos",
-			email: "Ingresa una dirección de correo válida"
-		},
+	var formMessages = $('#error');
 
-		submitHandler: submitForm
+	$(form).submit(function(e) {
 
-	});
+		e.preventDefault();
 
-	function submitForm()
-	{
-		var data = $("#form_separte").serialize();
+		// Serializamos...
+		var formData = $(form).serialize();
 
+		// enviamos mediante AJAX
 		$.ajax({
 
-			type:'POST',
-			url: 'envia.php',
-			data: data,
-			beforeSend: function()
-			{
-				$('#error').fadeOut();
-				$('#btnSubmit').html('Cargando...');
-			},
+			type: 'POST',
+			url: $(form).attr('action'),
+			data: formData
+			
+		})
+		.done(function(response) {
 
-			success: function(data)
-			{
+			$(formMessages).removeClass('error');
+			$(formMessages).addClass('success');
 
-				// validaciones de envio email
+			$(formMessages).text(response);
+
+			$('#nombres').val('');
+			$('#email').val('');
+		})
+		.fail(function(data) {
+
+			$(formMessages).removeClass('success');
+			$(formMessages).addClass('error');
+
+			if (data.responseText !== '') {
+
+				$(formMessages).text(data.responseText);
+
+			} else {
+
+				$(formMessages).text('Ocurrió un error con tu registro. Intenta nuevamente.');
 
 			}
 
 		});
 
-		return false;
-	}
+	});
 
 });
