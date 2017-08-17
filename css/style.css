@@ -4,16 +4,17 @@
 @import url("plugin/colorbox.css");
 @import url("plugin/jquery.fs.tipper.css");
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+@import url("main.css");
 
-/* 
+/*
 * BASIC STYLE
-  - General Style    
-  - Headings Style    
-  - Button Style    
-  - Form Style    
+  - General Style
+  - Headings Style
+  - Button Style
+  - Form Style
   - Spacer Style
-      
-* HEADER 
+
+* HEADER
   - Header Style
   - Logo Style
   - Navigation Menu Style
@@ -35,7 +36,7 @@
   - Client Logo
   - Icon
   - Table
-  
+
 * GLOBAL STYLES
   - Push Menu Style ( Right Sidebar Menu )
   - Search Overlay Menu
@@ -64,6 +65,13 @@
 
 
 /*  General Style   ||-----------*/
+
+@font-face {
+font-family: 'Moon Flower Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Moon Flower Bold'), url('../fonts/Moon Flower Bold.woff') format('woff');
+}
 
 body, html {
     height: 100%;
@@ -270,8 +278,8 @@ p {
 h1, h2, h3, h4, h5, h6 {
     color: #323232;
     text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+    font-family: 'Moon Flower Bold', sans-serif;
+    font-weight: bold;
     margin-top: 0px;
     margin-bottom: 10px;
 }
