@@ -87,6 +87,45 @@ $('#btnSeParte').on('click', function(){
   if(correo =="" || nombre == "" ){
     $('.span').show();
   }else{
-    $('.span').hide();    
+    $('.span').hide();
   }
 })
+
+//modal
+
+$('.cbox-gallary1').on('click', '.cboxPhoto', function(e){
+  console.log(e.target);
+  console.log(e.currentTarget);
+  $('img.cboxPhoto').append('<p>Hola!</p>');
+})
+
+var images=document.getElementById('misImg');
+var span = document.getElementById("close");
+var modal = document.getElementById('myModal');
+
+//images.onclick=function captura(e){
+images.addEventListener('click',function (e){
+  e.preventDefault();
+  console.log(e.target);
+  console.log(e.currentTarget);
+  console.log(e.target.nextElementSibling);
+  // colocar condicional para solo seleccionar la img
+  if(e.target.tagName == "IMG"){
+    console.log('entre');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    modal.style.display="block";
+    modalImg.src = e.target.src;
+    captionText.innerHTML = e.target.alt;
+    console.log(modalImg.src);
+  }
+});
+
+function cerrar (event){
+  event.preventDefault();
+  // console.log(event.target);
+    modal.style.display="none";
+  }
+
+
+span.addEventListener('click',cerrar);
