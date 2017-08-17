@@ -259,24 +259,40 @@
                 							</div>
 
                 							<div class="col-md-6">
-                								<label>Distrito</label>
+                								<label>Soy un</label>
                 							</div>
                 							<div class="col-md-6">
-                								<input type="text" name="distrito" id="distrito" placeholder="Ingresa tu distrito" class="form-control">
+                                <div class="dropdown">
+                                  <button class="btn btn-md btn-black dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Elige una opción
+                                  </button>
+                                  <div class="dropdown-menu form-button" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#" role-client="padre">Padre</a>
+                                    <a class="dropdown-item" href="#" role-client="profesor">Profesor</a>
+                                  </div>
+                                </div>
                 							</div>
+                              <div class="oculto">
+                                <div class="col-md-6 inline-block">
+                  								<label>Nombre del colegio</label>
+                  							</div>
+                  							<div class="col-md-6 inline-block">
+                                  <input type="text" name="colegio" id="colegio" placeholder="Nombre del colegio" class="form-control">
+                  							</div>
+                                <div class="col-md-6 inline-block">
+                  								<label>Área</label>
+                  							</div>
+                  							<div class="col-md-6 inline-block">
+                  								<input type="text" name="area" id="area" placeholder="Área académica" class="form-control">
+                  							</div>
+                              </div>
 
-                							<div class="col-md-6">
-                							</div>
-                							<div class="col-md-6">
-                								<input type="checkbox" name="padre" id="padre" value="Padre"> Padre
-                								<input type="checkbox" name="profesor" id="profesor" value="Profesor"> Profesor
-                							</div>
 
 
-                							<div class="col-md-6">
+                							<div class="col-md-12 botones">
 
-                								<a class="btn btn-md btn-black" id="btnSeParte" name="btnSeParte">Ser parte</a>
-                								<a class="btn btn-md btn-black" id="btnYaSoyParte" name="btnYaSoyParte">Ya Soy Parte</a>
+                								<a class="btn btn-md btn-black inline-block" id="btnSeParte" name="btnSeParte">Ser parte</a>
+                								<a class="btn btn-md btn-black inline-block" id="btnYaSoyParte" name="btnYaSoyParte">Ya Soy Parte</a>
                 							</div>
 
 
