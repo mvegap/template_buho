@@ -13,9 +13,13 @@
 	font-size: 17px !important;
 }
 .post-header h2{
-	font-size: 45px;
+	font-size: 50px;
 	color: gray;
+	font-weight: bold;
 }
 .blog-post .post-meta, .comment-list .post-meta, .sidebar-widget .post-meta{
-	font-size: 25px !important;
+	font-size: 15px !important;
+}
+.inner-intro{
+	padding:100px 0;
 }
