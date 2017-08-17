@@ -5,7 +5,7 @@
   left:0;
   width:100%;
   height:100vh;
-  background:rgba(249, 66, 58, 0.75);
+  background:rgba(235, 103, 68, 0.75);
   }
 
   section#contant{
@@ -34,6 +34,12 @@
     width:100%;
     height:100vh;
   }
+
+  #overlay-dark{
+    background:rgba(235, 103, 68, 1);
+  }
+
+  
 
   .mb>img{
     width:70%;

@@ -4494,3 +4494,7 @@ ul.project-detail-block, .project-detail-block ul {
         visibility: hidden;
     }
 }
+
+#overlay-light{
+  background:rgba(235, 103, 68, 1);
+}
